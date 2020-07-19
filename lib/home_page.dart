@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Page;
 import 'package:slivers_demo_flutter/bottom_navigation.dart';
 import 'package:slivers_demo_flutter/page.dart';
 import 'package:slivers_demo_flutter/pages/fitness_tracker/activities/activities_page.dart';

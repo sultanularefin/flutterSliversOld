@@ -11,14 +11,21 @@ class NetworkingPageHeader implements SliverPersistentHeaderDelegate {
   final double minExtent;
   final double maxExtent;
 
+
+//  SliverPersistentHeaderDelegate
+  @override
+  // TODO: implement stretchConfiguration
+//  OverScrollHeaderStretchConfiguration get stretchConfiguration => throw UnimplementedError();
+  OverScrollHeaderStretchConfiguration get stretchConfiguration => null;
+
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Image.asset(
-          'assets/ronnie-mayo-361348-unsplash.jpg',
+        Image.network(
+          'https://i.pinimg.com/originals/00/bb/b3/00bbb3bd27206e376f328d522fdb5344.jpg',
           fit: BoxFit.cover,
         ),
         Container(

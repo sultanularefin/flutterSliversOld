@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Page;
 import 'package:slivers_demo_flutter/page.dart';
 
 class BottomNavigation extends StatelessWidget {
